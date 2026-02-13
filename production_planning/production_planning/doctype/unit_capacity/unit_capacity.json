@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "autoname": "field:unit_name",
+ "creation": "2026-02-11 14:30:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "unit_name",
+  "is_active",
+  "column_break_2",
+  "section_break_3",
+  "day_shift_capacity_kg",
+  "night_shift_capacity_kg",
+  "column_break_5",
+  "total_daily_capacity_kg",
+  "section_break_7",
+  "current_queue_weight",
+  "available_capacity",
+  "column_break_9",
+  "queue_count",
+  "last_updated"
+ ],
+ "fields": [
+  {
+   "fieldname": "unit_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Unit Name",
+   "options": "Unit 1\nUnit 2\nUnit 3\nUnit 4",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Capacity Configuration"
+  },
+  {
+   "fieldname": "day_shift_capacity_kg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Day Shift Capacity (KG)",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "night_shift_capacity_kg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Night Shift Capacity (KG)",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_daily_capacity_kg",
+   "fieldtype": "Float",
+   "label": "Total Daily Capacity (KG)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Current Status"
+  },
+  {
+   "fieldname": "current_queue_weight",
+   "fieldtype": "Float",
+   "label": "Current Queue Weight (KG)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_capacity",
+   "fieldtype": "Float",
+   "label": "Available Capacity (KG)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "queue_count",
+   "fieldtype": "Int",
+   "label": "Queue Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_updated",
+   "fieldtype": "Datetime",
+   "label": "Last Updated",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-11 14:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Production Planning",
+ "name": "Unit Capacity",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing User"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
